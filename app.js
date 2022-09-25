@@ -140,6 +140,7 @@ main.innerHTML='';
 
 for(i=0;i<courses.length;i++){
     maincourse(courses);
+    event.preventDefault();
 }
 
 function maincourse(pars){
