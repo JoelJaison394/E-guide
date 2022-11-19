@@ -8,6 +8,7 @@
 body{
     font-family: 'Poppins', sans-serif;
     background: #181717;
+    width: 100%;
 }
 
 .wrapper{
@@ -208,6 +209,12 @@ input:focus{
         display: none
         ;
     }
+
+    .course{
+        width: 250px;
+        height: 400px;
+
+    }
 }
 
 .list-items {
@@ -216,21 +223,28 @@ input:focus{
 }
 
 .list-items:hover{
-    border-bottom: #63b44a solid ;
+    border-bottom: 1px #63b44a solid ;
 }
 
 main {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
   }
 
-.course {
+  .courses{
     width: 350px;
     height: 400px;
     margin: .8rem;
-    background-color: rgb(247, 245, 245);
+  }
+
+.course {
+
+    
+
+    border-radius: 5px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -241,17 +255,12 @@ main {
     background-size: cover;
   }
 
-
-
-
 .course-Name{
-  font-size: 25px;
-  text-align: center;
-  color: #eaeaea;
+    font-size: 24px;
 }
 
 .sem1-2_heading{
-    margin: 10px;
+    width: 100%;
     text-align: center;
     color: #ccc;
 }

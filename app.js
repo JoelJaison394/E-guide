@@ -134,33 +134,29 @@ const bgDiv = document.querySelectorAll('#course');
 
 // Courses adding to html
 
-console.log(main);
 var i;
 main.innerHTML='';
 
 for(i=0;i<courses.length;i++){
     maincourse(courses);
-    event.preventDefault();
+    // e.preventDefault();
 }
 
 function maincourse(pars){
     
     const courseEl = document.createElement('div');
-    courseEl.classList.add('course');
-    courseEl.setAttribute('id','course');
+    courseEl.classList.add('courses');
+    courseEl.setAttribute('id','courses');
+    courseEl.style.backgroundImage=`url(${IMG_URL[i]}`;
+    courseEl.addEventListener('click' , (e) =>{
+        window.location = 'work.html';
+    })
     courseEl.innerHTML = `
-    <a href="./${Links[i]}">
-    <div class="course" style="background-image: url(${IMG_URL[i]}) ;"
-    <div >
-    <h3 class="course-Name">${pars[i]}</h3>
-    </div>
-    </div>
-    </a>        
+    <h3 class="course-Name"> ${pars[i]} </h3>     
     `
     main.appendChild(courseEl);  
 };
 
-console.log(bgDiv);
 
 
 
